@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    font-family: "Love Light", cursive;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: url(./back.avif); */
+    background: url(./back.jpg!sw800);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    background-color:  rgba(77, 12, 52, 0.8);
+    box-shadow: 5px 8px 8px rgb(111, 42, 207),
+    -5px -5px 8px rgb(91, 24, 184);
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+    max-width: 400px; /* Limiting container width for better readability on larger screens */
+    width: 90%; /* Ensure it's not too wide on smaller screens */
+    margin: auto; /* Center the container horizontally */
+    color: rgb(204, 44, 127);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 35px;
+    font-weight: bolder;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(3, 2fr);
+    gap: 25px;
+}
+
+label {
+    font-family: "Love Ya Like A Sister", cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box; /*Ensure padding doesn't affect width*/
+    background: transparent;
+    color: pink;
+    outline: none;
+}
+
+button {
+    background-color: rgb(193, 30, 136);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 5px 8px 8px purple,
+    -5px -5px 8px purple;
+    border: none;
+}
+
+button:hover {
+    background-color: rgba(193, 30, 136, 0.5);
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    color: rgb(205, 146, 239);
+    font-family: "Love Ya Like A Sister", cursive;
+}
