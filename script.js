@@ -81,3 +81,10 @@ document.getElementById("loveForm").addEventListener("submit", function (e) {
         ).textContent = `${yname.toUpperCase()}'s affection for ${tname.toUpperCase()} is : ${ans}% Your love transcends words, a symphony of passion and devotion resonating within your intertwined souls, destined to flourish in timeless unity. Treasure the profound bond you share and the boundless possibilities ahead.`;
     }
 });
+
+
+// Reset form function
+document.getElementById('resetButton').addEventListener('click', function() {
+    document.getElementById('loveForm').reset();
+    document.getElementById('result').textContent = '';
+});
